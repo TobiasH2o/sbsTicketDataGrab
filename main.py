@@ -132,6 +132,7 @@ class SqlConnector:
         for entry in cases['updated']:
             print(f"SELECT COUNT(*) FROM caseDetails WHERE caseDetails.id = {entry['id']}")
             result = 0
+
             if result == "1":
                 print(f"Updating case {entry['id']}")
                 print(
